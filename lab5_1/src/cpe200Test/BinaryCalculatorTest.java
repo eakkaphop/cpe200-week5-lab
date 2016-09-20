@@ -191,7 +191,7 @@ public class BinaryCalculatorTest {
             fail("Not expect exception here");
         }
         try {
-            assertEquals("-8", binaryCalculator.power());
+            binaryCalculator.power();
             fail("Expect an exception to be thrown before here");
         } catch (RuntimeException ex) {
             assertTrue(true);
@@ -561,7 +561,7 @@ public class BinaryCalculatorTest {
         }
 
         try {
-            binaryCalculator.division();
+            binaryCalculator.power();
             fail("Expect an exception to be thrown before here");
         } catch (RuntimeException ex) {
             assertTrue(true);
